@@ -7,7 +7,7 @@ export const Card = styled.div`
   align-items: flex-start;
 
   height: 310px;
-  width: 240px;
+  width: calc((100%-40px) / 4);
   border: 1px var(--color-gray-20) solid;
   border-radius: 5px;
 `;

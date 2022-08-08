@@ -1,20 +1,39 @@
 import { Card, Image, Description } from "./styles";
-import Burger from "../../assets/Burger.png";
 
-const ProductsList = () => {
+const Product = ({
+  cartList,
+  setCartList,
+  key,
+  name,
+  category,
+  price,
+  imgSrc,
+  products,
+}) => {
+  function addToCart(id) {
+    const item = products.find((elem) => elem.id === id);
+    setCartList([...cartList, item]);
+  }
+
   return (
     <Card>
       <Image>
-        <img src={Burger} alt="Burger" />
+        <img src={imgSrc} alt="Burger" />
       </Image>
       <Description>
-        <h3>Hamburguer</h3>
-        <p>Sanduíche</p>
-        <h1>R$14.00</h1>
-        <button>Adicionar</button>
+        <h3>{name}</h3>
+        <p>{category}</p>
+        <h1>R${price.toFixed(2)}</h1>
+        <button
+          onClick={() => {
+            addToCart(key);
+          }}
+        >
+          Adicionar
+        </button>
       </Description>
     </Card>
   );
 };
 
-export default ProductsList;
+export default Product;

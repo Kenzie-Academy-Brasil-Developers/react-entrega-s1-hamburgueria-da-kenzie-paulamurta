@@ -1,15 +1,14 @@
 import { Card, Img, ContainerTxt } from "./styles";
-import Burger from "../../assets/Burger.png";
 
-const CartProduct = () => {
+const CartProduct = ({ name, category, imgSrc }) => {
   return (
     <Card>
       <Img>
-        <img src={Burger} alt="Burger" />
+        <img src={imgSrc} alt="Item" />
       </Img>
       <ContainerTxt>
-        <h3>Hamburguer</h3>
-        <p>Sanduíche</p>
+        <h3>{name}</h3>
+        <p>{category}</p>
       </ContainerTxt>
       <button>Remover</button>
     </Card>

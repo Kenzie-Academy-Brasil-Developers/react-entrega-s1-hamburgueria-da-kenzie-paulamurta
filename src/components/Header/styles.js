@@ -41,4 +41,8 @@ export const Form = styled.form`
     border-radius: 8px;
     color: var(--color-white);
   }
+
+  button:hover {
+    background-color: var(--color-primary-light);
+  }
 `;

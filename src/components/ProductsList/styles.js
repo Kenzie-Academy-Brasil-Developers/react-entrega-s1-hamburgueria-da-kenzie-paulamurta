@@ -6,6 +6,6 @@ export const Container = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 2vw;
-  width: 63vw;
-  background-color: var(--color-secondary);
+  width: 62vw;
+  margin-bottom: 5vh;
 `;

@@ -13,7 +13,6 @@ const ProductsList = () => {
       <Product />
       <Product />
       <Product />
-      <Product />
     </Container>
   );
 };

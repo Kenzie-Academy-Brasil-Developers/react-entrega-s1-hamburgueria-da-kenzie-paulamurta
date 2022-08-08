@@ -25,6 +25,11 @@ export const Container = styled.div`
     color: var(--color-gray-50);
     font-weight: 600;
   }
+
+  button:hover {
+    background-color: var(--color-gray-50);
+    color: var(--color-gray-0);
+  }
 `;
 
 export const Title = styled.div`

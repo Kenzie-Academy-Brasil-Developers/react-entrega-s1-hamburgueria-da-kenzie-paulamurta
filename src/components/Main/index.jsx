@@ -22,7 +22,7 @@ const Main = ({
         cartList={cartList}
         setCartList={setCartList}
       />
-      <Cart cartList={cartList} />
+      <Cart cartList={cartList} setCartList={setCartList} />
     </Container>
   );
 };

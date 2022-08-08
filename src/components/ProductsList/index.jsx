@@ -26,7 +26,7 @@ const ProductsList = ({
       <Products>
         {(filtered.length > 0 ? filtered : products).map((product) => (
           <Product
-            key={product.id}
+            id={product.id}
             name={product.name}
             category={product.category}
             price={product.price}

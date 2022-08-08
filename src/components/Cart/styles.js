@@ -14,7 +14,7 @@ export const Title = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-primary);
-  width: 100%;
+  width: 25vw;
   height: 11vh;
   padding: 0 2vw;
   border-top-left-radius: 8px;
@@ -33,7 +33,7 @@ export const Content = styled.div`
   justify-content: flex-start;
   align-items: center;
   background-color: var(--color-gray-0);
-  width: 100%;
+  width: 25vw;
   height: 50;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;

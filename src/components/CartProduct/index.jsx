@@ -1,6 +1,11 @@
 import { Card, Img, ContainerTxt } from "./styles";
 
-const CartProduct = ({ name, category, imgSrc }) => {
+const CartProduct = ({ cartList, setCartList, id, name, category, imgSrc }) => {
+  function deleteItem(productID) {
+    const newCartList = cartList.filter((elem) => elem.id !== productID);
+    setCartList(newCartList);
+  }
+
   return (
     <Card>
       <Img>
@@ -10,7 +15,7 @@ const CartProduct = ({ name, category, imgSrc }) => {
         <h3>{name}</h3>
         <p>{category}</p>
       </ContainerTxt>
-      <button>Remover</button>
+      <button onClick={() => deleteItem(id)}>Remover</button>
     </Card>
   );
 };

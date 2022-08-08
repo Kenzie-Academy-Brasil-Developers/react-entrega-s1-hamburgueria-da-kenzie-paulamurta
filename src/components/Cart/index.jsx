@@ -3,7 +3,7 @@ import CartTotal from "../CartTotal";
 import EmptyCart from "../EmptyCart";
 import { Container, Content, Title } from "./styles";
 
-const Cart = ({ cartList }) => {
+const Cart = ({ cartList, setCartList }) => {
   return (
     <Container>
       <Title>
@@ -15,14 +15,16 @@ const Cart = ({ cartList }) => {
         ) : (
           cartList.map((product) => (
             <CartProduct
+              id={product.id}
               name={product.name}
               category={product.category}
               imgSrc={product.img}
+              cartList={cartList}
+              setCartList={setCartList}
             />
           ))
         )}
-
-        <CartTotal />
+        <CartTotal cartList={cartList} setCartList={setCartList} />
       </Content>
     </Container>
   );

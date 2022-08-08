@@ -5,7 +5,7 @@ export const Card = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 25vw;
   height: 100%;
   padding: 2vh;
   gap: 1vw;

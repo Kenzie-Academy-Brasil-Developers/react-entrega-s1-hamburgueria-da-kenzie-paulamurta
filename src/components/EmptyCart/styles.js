@@ -22,4 +22,16 @@ export const Container = styled.div`
     font-size: 0.9rem;
     color: var(--color-gray-50);
   }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    padding: 0;
+    height: 15vh;
+    gap: 2vh;
+  }
 `;

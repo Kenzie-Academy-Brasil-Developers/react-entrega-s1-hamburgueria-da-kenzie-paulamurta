@@ -8,6 +8,18 @@ export const Container = styled.div`
   height: 14vh;
   padding: 0vh 6vw;
   background-color: var(--color-gray-0);
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 2vh;
+    height: auto;
+    padding: 2vh;
+  }
 `;
 
 export const Form = styled.form`
@@ -44,5 +56,23 @@ export const Form = styled.form`
 
   button:hover {
     background-color: var(--color-primary-light);
+  }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    width: 100%;
+
+    button {
+      border: none;
+      background-color: var(--color-primary);
+      height: 6vh;
+      width: 30vw;
+      border-radius: 8px;
+      color: var(--color-white);
+    }
   }
 `;

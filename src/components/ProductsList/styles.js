@@ -6,6 +6,14 @@ export const Container = styled.div`
   justify-content: center;
   gap: 5vh;
   width: 100%;
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+  }
 `;
 
 export const Products = styled.div`
@@ -15,6 +23,19 @@ export const Products = styled.div`
   gap: 20px;
   width: 62vw;
   margin-bottom: 5vh;
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 2vh;
+  }
 `;
 
 export const Search = styled.div`
@@ -37,8 +58,18 @@ export const Search = styled.div`
     border-radius: 8px;
     color: var(--color-white);
   }
-
   button:hover {
     background-color: var(--color-primary-light);
+  }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    button {
+      width: 30vw;
+    }
   }
 `;

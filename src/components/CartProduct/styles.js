@@ -22,6 +22,15 @@ export const Card = styled.div`
     font-weight: 600;
     text-decoration: underline;
   }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const Img = styled.div`

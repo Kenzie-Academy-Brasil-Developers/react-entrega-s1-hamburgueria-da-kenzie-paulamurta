@@ -7,6 +7,15 @@ export const Container = styled.div`
   align-items: center;
   width: 25vw;
   height: 100%;
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.div`
@@ -25,6 +34,15 @@ export const Title = styled.div`
     font-size: 1.1rem;
     font-weight: 700;
   }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.div`
@@ -38,4 +56,13 @@ export const Content = styled.div`
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding-bottom: 2vh;
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;

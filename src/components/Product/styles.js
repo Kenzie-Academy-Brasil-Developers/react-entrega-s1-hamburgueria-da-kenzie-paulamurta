@@ -10,6 +10,16 @@ export const Card = styled.div`
   width: calc((100%-40px) / 4);
   border: 1px var(--color-gray-20) solid;
   border-radius: 5px;
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    min-width: 250px;
+    height: 330px;
+  }
 `;
 
 export const Image = styled.div`
@@ -64,5 +74,16 @@ export const Description = styled.div`
 
   button:hover {
     background-color: var(--color-primary-light);
+  }
+
+  //Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  //Smartphone
+  @media screen and (max-width: 767px) {
+    button {
+      width: 30vw;
+    }
   }
 `;

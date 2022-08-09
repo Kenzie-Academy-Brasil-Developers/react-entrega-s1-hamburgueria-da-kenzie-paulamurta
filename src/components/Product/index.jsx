@@ -12,7 +12,9 @@ const Product = ({
 }) => {
   function addToCart(itemId) {
     const item = products.find((elem) => elem.id === itemId);
-    setCartList([...cartList, item]);
+    cartList.find((elem) => elem.id === itemId)
+      ? setCartList(cartList) && alert.show("Esse item já foi adiionado")
+      : setCartList([...cartList, item]);
   }
 
   return (

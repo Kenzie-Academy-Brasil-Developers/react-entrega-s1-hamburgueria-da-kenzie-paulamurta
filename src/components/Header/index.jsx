@@ -4,7 +4,9 @@ import LogoKenzie from "../../assets/LogoKenzie.svg";
 const Header = ({ setFiltered, products, search, setSearch }) => {
   function handleSearch(event) {
     event.preventDefault();
-    const newFilter = products.filter((elem) => elem.name.match(search));
+    const newFilter = products.filter((elem) => {
+      return elem.name.toLowerCase().match(search.toLowerCase());
+    });
     setFiltered(newFilter);
   }
 
